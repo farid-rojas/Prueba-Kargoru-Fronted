@@ -1,0 +1,7 @@
+<form class="form" (ngSubmit)="onSearch()" #NQuote="ngForm">
+    <h4 class="form-title">Quote</h4>
+    <div>
+      <input class="controls" type="number" value=" " name="Document" required id="Document " [(ngModel)]="Quote.document" placeholder="Enter your Document">
+    </div>
+    <a routerLink="/view-quotes"><button class="btn" [disabled]="NQuote.invalid" type="submit">Search</button></a>
+  </form>

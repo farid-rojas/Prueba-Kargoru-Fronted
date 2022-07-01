@@ -1,0 +1,21 @@
+<table class="table">
+  <tr>
+    <th class ="table-title" colspan="6">View Quotes</th>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Document</th>
+    <th>Name</th>
+    <th>weight</th>
+    <th>AddressSource</th>
+    <th>AddressDestination</th>
+  </tr>
+  <tr *ngFor="let quote of quotes" >
+    <td>{{quote.id}}</td>
+    <td>{{quote.document}}</td>
+    <td>{{quote.name}}</td>
+    <td>{{quote.weight}}</td>
+    <td>{{quote.addressSource}}</td>
+    <td>{{quote.addressDestination}}</td>
+  </tr>
+</table>

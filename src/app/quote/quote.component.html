@@ -1,0 +1,21 @@
+
+  <form class="form" (ngSubmit)="onRegister()" #NQuote="ngForm">
+    <h4 class="form-title">Quote</h4>
+    <div>
+      <input class="controls" type="number" value=" " name="Document" required id="Document " [(ngModel)]="Quote.document" placeholder="Enter your Document">
+    </div>
+    <div>
+      <input class="controls" type="text" name="name" required id="name" [(ngModel)]="Quote.name" placeholder="Enter your name">
+    </div>
+    <div>
+      <input class="controls" type="text" name="weight" required id="weight" [(ngModel)]="Quote.weight" placeholder="Enter the weight">
+    </div>
+    <div>
+      <input class="controls" type="text" name="addressSource"required id="addressSource" [(ngModel)]="Quote.addressSource" placeholder="Enter the origin address">
+    </div>
+    <div>
+      <input class="controls" type="text" name="addressDestination" required id="addressDestination" [(ngModel)]="Quote.addressDestination" placeholder="Enter the destination address">
+    </div>
+    <button class="btn"  type="submit">Login</button>
+  </form>
+
